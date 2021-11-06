@@ -6,8 +6,11 @@ const createMsg = async (req, res) => {
 
     try {
         const msg = await messages.create(text);
-        return res.send(`Message added successfully: 
-        ${msg}`);      
+        await messages.find().select('_id text')
+        return res.json({
+            status: "Message added successfully",
+            msg
+        });      //`Message added successfully: ${msg}`
     } catch (error) {
         res.status(500).send(error);
     }
