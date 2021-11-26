@@ -1,7 +1,7 @@
 {
   "name": "deploy-practice",
   "version": "1.0.0",
-  "description": "Project to create and deploy an TODO list APi",
+  "description": "Project to create and deploy a TODO list API",
   "main": "app.js",
   "dependencies": {
     "express": "^4.17.1",
