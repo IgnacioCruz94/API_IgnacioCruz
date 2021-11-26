@@ -5,5 +5,5 @@ exports.initDataBases = async () => {
   await mongoose.connect(url_, () => {
     console.log("Connected to databases correctly");
   });
-  main().catch(err => console.log(err));
+  //main().catch(err => console.log(err));
 }
